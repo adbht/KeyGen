@@ -1,6 +1,6 @@
 //  KeyGenTests.swift
 //  KeyGenTests
-//  Created by Adi Bhatia on 2018-05-25.
+//  Created by Aditya Bhatia on 2018-05-25.
 //  Copyright © 2018 adbht. All rights reserved.
 
 import XCTest
