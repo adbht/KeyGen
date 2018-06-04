@@ -5,7 +5,7 @@
 
 ## Instructions to simulate
 ###   1. Install the following folders: ```KeyGen``` ```KeyGenTests``` and ```KeyGenUITests```
-###   2. Install ```KeyGen.xcodeproj```
+###   2. Install ```KeyGen.xcodeproj.zip``` and extract this zip file
 ###   3. Save these files and folders under a single folder with the name ```KeyGen```
 ###   3. Open Xcode from Applications
 ###   4. On the 'Welcome to Xcode page' you should see an existing project with the name ```KeyGen```. Click on this project.
