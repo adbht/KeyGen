@@ -9,5 +9,4 @@
 ###   3. Save these files and folders under a single folder with the name ```KeyGen```
 ###   3. Open Xcode from Applications
 ###   4. On the 'Welcome to Xcode' page you should see an existing project with the name ```KeyGen```. Click on this project.
-###   5. Once the Xcode has finished loading the project, click on the play button (triangle shaped logo) on the top left corner of the Xcode screen. 
-###   6. If you wish to simulate the application on another iOS device, click on the third button on the right of the play button which mentions an iOS device. This is the default iOS device Xcode has chosen to simulate in. You may choose to change the device to another iPhone or iPad model.
+###   5. Once the Xcode has finished loading the project, click on the play button (triangle shaped logo) on the top left corner of the Xcode screen. Done! (If you wish to simulate the application on another iOS device, click on the third button on the right of the play button which mentions an iOS device. This is the default iOS device Xcode has chosen to simulate in. You may choose to change the device to another iPhone or iPad model)
