@@ -7,18 +7,14 @@ import XCTest
 @testable import KeyGen
 
 class KeyGenTests: XCTestCase {
-    
     override func setUp() {
         super.setUp()
     }
-    
     override func tearDown() {
         super.tearDown()
     }
-    
     func testExample() {
     }
-    
     func testPerformanceExample() {
         self.measure {
         }
