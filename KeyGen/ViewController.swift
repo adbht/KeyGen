@@ -7,7 +7,6 @@ import UIKit
 import Foundation //This is needed to round off the the slider value and display a whole number using round()
 
 class ViewController: UIViewController {
-    
     //Connecting all the outlets and actions needed from Main.storyboard
     @IBOutlet weak var KeyNumber: UILabel!
     @IBOutlet weak var SliderOutlet: UISlider!
@@ -16,14 +15,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var SymbolsSwitch: UISwitch!
     @IBOutlet weak var Password: UILabel!
     @IBOutlet weak var CopyOutlet: UIButton!
-    
     @IBAction func SliderAction(_ sender: UISlider) {
-        KeyNumber.text = "\(round(SliderOutlet.value))" //This will change the value of KeyNumber outlet to the slider value.
+        KeyNumber.text = "\(round(SliderOutlet.value))" //This action will change the value of KeyNumber outlet to the slider value.
     }
-    
     @IBAction func Generate(_ sender: Any) {
         var newKey : String = "" //Defining the new password. This will be changed to an actual password after checking user configuration.
-  
         if LettersSwitch.isOn == false && DigitsSwitch.isOn == false && SymbolsSwitch.isOn == false { //Error check to see if user has switched off all 3 switches
             Password.text = "Password cannot be generated without letters, digits, and symbols"
         } else if LettersSwitch.isOn == true && DigitsSwitch.isOn == false && SymbolsSwitch.isOn == false { //If user has only switched on letters
