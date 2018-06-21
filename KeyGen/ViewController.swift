@@ -7,11 +7,12 @@ import UIKit
 import Foundation //This is needed to round off the the slider value and display a whole number using round()
 
 class ViewController: UIViewController {
+    
     //Connecting all the outlets and actions needed from Main.storyboard
-    @IBOutlet weak var KeyNumber: UILabel!
-    @IBOutlet weak var SliderOutlet: UISlider!
-    @IBOutlet weak var LettersSwitch: UISwitch!
-    @IBOutlet weak var DigitsSwitch: UISwitch!
+    @IBOutlet weak var KeyNumber: UILabel!                                  //This is the float number that is displayed on the right of the "Password Length" to indicate what length the user has chosen 
+    @IBOutlet weak var SliderOutlet: UISlider!                              //Slider outlet is required to read the user input on password length
+    @IBOutlet weak var LettersSwitch: UISwitch!                             //To check if user has chosen to include letters in the password
+    @IBOutlet weak var DigitsSwitch: UISwitch!                              
     @IBOutlet weak var SymbolsSwitch: UISwitch!
     @IBOutlet weak var Password: UILabel!
     @IBOutlet weak var CopyOutlet: UIButton!
