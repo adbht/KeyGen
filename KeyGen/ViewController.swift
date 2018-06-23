@@ -4,22 +4,21 @@
 //  Copyright © 2018 adbht. All rights reserved.
 
 import UIKit
-import Foundation //This is needed to round off the the slider value and display a whole number using round() function
 
 class ViewController: UIViewController {
     
     //Connecting all the outlets and actions needed from Main.storyboard
-    @IBOutlet weak var KeyNumber: UILabel!                                  //This is the float number that is displayed on the right of the "Password Length" to indicate what length the user has chosen 
-    @IBOutlet weak var SliderOutlet: UISlider!                              //Slider outlet is required to read the user input on password length
-    @IBOutlet weak var LettersSwitch: UISwitch!                             //To check if user has chosen to include letters in the password
-    @IBOutlet weak var DigitsSwitch: UISwitch!                              //To check if user has chosen to include digits in the password                              
-    @IBOutlet weak var SymbolsSwitch: UISwitch!                             //To check if user has chosen to include symbols in the password
-    @IBOutlet weak var Password: UILabel!                                   //This label will be replaced with a string containg the new password generated
-    @IBOutlet weak var CopyOutlet: UIButton!                                //This outlet is only needed to keep this button hidden until the password is generated
+    @IBOutlet weak var KeyNumber: UILabel!          //To indicate the "Password Length" user has chosen via slider input
+    @IBOutlet weak var SliderOutlet: UISlider!      //Slider outlet is required to read the user input on password length
+    @IBOutlet weak var LettersSwitch: UISwitch!     //To check if user has chosen to include letters in the password
+    @IBOutlet weak var DigitsSwitch: UISwitch!      //To check if user has chosen to include digits in the password
+    @IBOutlet weak var SymbolsSwitch: UISwitch!     //To check if user has chosen to include symbols in the password
+    @IBOutlet weak var Password: UILabel!           //This label will be replaced with a string containg the new password generated
+    @IBOutlet weak var CopyOutlet: UIButton!        //This outlet is only needed to keep this button hidden until the password is generated
     
     //Slider action function to change the value of KeyNumber outlet to the slider value
     @IBAction func SliderAction(_ sender: UISlider) {
-        KeyNumber.text = "\(round(SliderOutlet.value))"
+        KeyNumber.text = String(Int(SliderOutlet.value))
     }
     
     //Main function to control what to do after the user has pressed the "Generate" button
