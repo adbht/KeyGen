@@ -1,6 +1,8 @@
 # KeyGen
 
 ## Screenshots
+<img src="https://github.com/adbht/KeyGen/blob/master/Screenshots/Launch%20Screen.jpg" width="191"> 
+
 <img src="https://github.com/adbht/KeyGen/blob/master/Screenshots/DefaultScreen.png" width="191">                           <img src="https://github.com/adbht/KeyGen/blob/master/Screenshots/Generating%20Password%20(Example%201).png" width="197">   <img src="https://github.com/adbht/KeyGen/blob/master/Screenshots/Generating%20Password%20(Example%202).png" width="189">  <img src="https://github.com/adbht/KeyGen/blob/master/Screenshots/Generating%20Password%20(Example%203).png" width="191">     
 
 ## About
