@@ -1,5 +1,8 @@
 # KeyGen
 
+## Inspiration
+Cyber security has always been a threat to the society. Unfortunately most of the people take their account security for granted by having very predictable if not easy to crack passwords simply for their convenience and ease of typing every time they log in. KeyGen provides a solution by generating randomized keys with wide variety of options on wether to include letters, digits, and/or symbols from a range of 2 to 30 characters. The passwords can then be copied to clipboard encouraging users to use secure passwords to keep their accounts safe. 
+
 ## Screenshots
 <img src="https://github.com/adbht/KeyGen/blob/master/Screenshots/Launch%20Screen.jpg" width="195">                                    <img src="https://github.com/adbht/KeyGen/blob/master/Screenshots/Default%20Screen%20at%20Launch.png" width="190">                       <img src="https://github.com/adbht/KeyGen/blob/master/Screenshots/Generating%20Password%20(Example%202).png" width="190">         <img src="https://github.com/adbht/KeyGen/blob/master/Screenshots/Generating%20Password%20(Example%203).png" width="190">   
 
