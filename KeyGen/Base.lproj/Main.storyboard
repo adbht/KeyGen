@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I5T-KX-uSm">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I5T-KX-uSm">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,19 +12,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KeyGen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfJ-gT-xMb">
-                                <rect key="frame" x="44" y="150" width="203" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Letters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfL-Za-npb">
-                                <rect key="frame" x="44" y="292" width="78" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Letters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfL-Za-npb">
+                                <rect key="frame" x="44" y="202" width="98" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="Xjy-uZ-hc7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,16 +27,11 @@
                                     <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
                                 </metadata>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="16" minValue="2" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="k24-qT-AHU">
-                                <rect key="frame" x="42" y="222" width="292" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="SliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Mlh-X1-hcm"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Symbols" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwq-2T-84b">
-                                <rect key="frame" x="44" y="485" width="98" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Symbols" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwq-2T-84b">
+                                <rect key="frame" x="44" y="370.5" width="103" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="oth-54-yJf"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,13 +39,8 @@
                                     <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
                                 </metadata>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XCX-gJ-ZHT">
-                                <rect key="frame" x="273" y="292" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Digits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wva-5W-JP3">
-                                <rect key="frame" x="44" y="390" width="64" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Digits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wva-5W-JP3">
+                                <rect key="frame" x="44" y="285.5" width="98" height="29"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -66,24 +48,11 @@
                                     <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
                                 </metadata>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1Z-yt-OAL">
-                                <rect key="frame" x="273" y="391" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1Z-yt-OAL">
+                                <rect key="frame" x="507" y="284.5" width="51" height="31"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b6z-27-Mhy">
-                                <rect key="frame" x="273" y="485" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrO-dx-IVh">
-                                <rect key="frame" x="16" y="633" width="343" height="145"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2k-G9-a2x">
-                                <rect key="frame" x="273" y="149" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="16" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2k-G9-a2x">
+                                <rect key="frame" x="507" y="114" width="49" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -91,39 +60,91 @@
                                     <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
                                 </metadata>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGh-Ae-aba">
-                                <rect key="frame" x="167" y="580" width="40" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGh-Ae-aba">
+                                <rect key="frame" x="167.5" y="563.5" width="40" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Copy"/>
                                 <connections>
-                                    <action selector="CopyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KHR-TV-5Cf"/>
+                                    <action selector="copyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KHR-TV-5Cf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Password Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfJ-gT-xMb">
+                                <rect key="frame" x="44" y="114" width="195" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="16" minValue="2" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="k24-qT-AHU">
+                                <rect key="frame" x="42" y="208" width="291" height="31"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Mlh-X1-hcm"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XCX-gJ-ZHT">
+                                <rect key="frame" x="507" y="200" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b6z-27-Mhy">
+                                <rect key="frame" x="507" y="369.5" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrO-dx-IVh">
+                                <rect key="frame" x="30" y="519" width="315" height="134"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EfJ-gT-xMb" firstAttribute="top" secondItem="M2k-G9-a2x" secondAttribute="top" id="3Bq-As-f3h"/>
+                            <constraint firstItem="vrO-dx-IVh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3Vu-mW-tsD"/>
+                            <constraint firstItem="EfJ-gT-xMb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="3cq-LR-ksd"/>
+                            <constraint firstItem="EfJ-gT-xMb" firstAttribute="leading" secondItem="k24-qT-AHU" secondAttribute="leading" id="5SW-RJ-MgY"/>
+                            <constraint firstItem="vrO-dx-IVh" firstAttribute="top" secondItem="b6z-27-Mhy" secondAttribute="bottom" constant="96.666666666666629" id="8mE-Fp-h3B"/>
+                            <constraint firstItem="ZfL-Za-npb" firstAttribute="centerY" secondItem="XCX-gJ-ZHT" secondAttribute="centerY" constant="1" id="EjK-Lu-mQC"/>
+                            <constraint firstItem="M2k-G9-a2x" firstAttribute="leading" secondItem="XCX-gJ-ZHT" secondAttribute="leading" id="IMg-F4-SFK"/>
+                            <constraint firstItem="XCX-gJ-ZHT" firstAttribute="leading" secondItem="g1Z-yt-OAL" secondAttribute="leading" id="JlA-LL-COb"/>
+                            <constraint firstItem="wva-5W-JP3" firstAttribute="leading" secondItem="lwq-2T-84b" secondAttribute="leading" id="QIr-aN-gg1"/>
+                            <constraint firstItem="k24-qT-AHU" firstAttribute="trailing" secondItem="XCX-gJ-ZHT" secondAttribute="trailing" id="VrE-MU-Fq5"/>
+                            <constraint firstItem="b6z-27-Mhy" firstAttribute="top" secondItem="g1Z-yt-OAL" secondAttribute="bottom" constant="54" id="WIo-wb-cBM"/>
+                            <constraint firstItem="g1Z-yt-OAL" firstAttribute="leading" secondItem="b6z-27-Mhy" secondAttribute="leading" id="XT1-XU-lLI"/>
+                            <constraint firstItem="g1Z-yt-OAL" firstAttribute="top" secondItem="XCX-gJ-ZHT" secondAttribute="bottom" constant="54" id="XT3-2A-LD2"/>
+                            <constraint firstItem="vrO-dx-IVh" firstAttribute="top" secondItem="LGh-Ae-aba" secondAttribute="bottom" constant="19.333333333333258" id="YXT-R7-8D1"/>
+                            <constraint firstItem="ZfL-Za-npb" firstAttribute="trailing" secondItem="wva-5W-JP3" secondAttribute="trailing" id="YZZ-da-V8B"/>
+                            <constraint firstItem="k24-qT-AHU" firstAttribute="top" secondItem="M2k-G9-a2x" secondAttribute="bottom" constant="36" id="Zys-3j-8mv"/>
+                            <constraint firstItem="wva-5W-JP3" firstAttribute="centerY" secondItem="g1Z-yt-OAL" secondAttribute="centerY" id="aOX-Lq-t6Q"/>
+                            <constraint firstItem="k24-qT-AHU" firstAttribute="centerX" secondItem="LGh-Ae-aba" secondAttribute="centerX" id="f1M-K0-g0y"/>
+                            <constraint firstItem="LGh-Ae-aba" firstAttribute="centerX" secondItem="vrO-dx-IVh" secondAttribute="centerX" id="fTG-39-mjk"/>
+                            <constraint firstItem="vrO-dx-IVh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gH2-E1-mdE"/>
+                            <constraint firstItem="wva-5W-JP3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jjE-Vl-Jgh"/>
+                            <constraint firstItem="k24-qT-AHU" firstAttribute="leading" secondItem="ZfL-Za-npb" secondAttribute="leading" id="l7t-yp-yMq"/>
+                            <constraint firstItem="M2k-G9-a2x" firstAttribute="trailing" secondItem="k24-qT-AHU" secondAttribute="trailing" id="lK4-XL-5og"/>
+                            <constraint firstItem="EfJ-gT-xMb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="mgv-Au-gm2"/>
+                            <constraint firstItem="ZfL-Za-npb" firstAttribute="leading" secondItem="wva-5W-JP3" secondAttribute="leading" id="p3v-Th-8r1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vrO-dx-IVh" secondAttribute="bottom" constant="2" id="uPI-HK-hkt"/>
+                            <constraint firstItem="vrO-dx-IVh" firstAttribute="top" secondItem="lwq-2T-84b" secondAttribute="bottom" constant="96.666666666666629" id="yzD-7V-2bH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="KeyGen" id="HFC-rQ-KiA">
                         <barButtonItem key="rightBarButtonItem" title="Generate" id="Xzf-dy-IOa">
                             <connections>
-                                <action selector="Generate:" destination="BYZ-38-t0r" id="GxO-7V-Rth"/>
+                                <action selector="generate:" destination="BYZ-38-t0r" id="GxO-7V-Rth"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="CopyOutlet" destination="LGh-Ae-aba" id="iU7-rR-B2U"/>
-                        <outlet property="DigitsSwitch" destination="g1Z-yt-OAL" id="f8j-u9-TlR"/>
-                        <outlet property="KeyNumber" destination="M2k-G9-a2x" id="P6t-gg-Xwd"/>
-                        <outlet property="LettersSwitch" destination="XCX-gJ-ZHT" id="muR-DX-dVP"/>
-                        <outlet property="Password" destination="vrO-dx-IVh" id="JkY-cQ-Ffa"/>
-                        <outlet property="SliderOutlet" destination="k24-qT-AHU" id="hjP-Yl-W5o"/>
-                        <outlet property="SymbolsSwitch" destination="b6z-27-Mhy" id="txH-io-sop"/>
+                        <outlet property="copyOutlet" destination="LGh-Ae-aba" id="iU7-rR-B2U"/>
+                        <outlet property="digitsSwitch" destination="g1Z-yt-OAL" id="f8j-u9-TlR"/>
+                        <outlet property="keyNumber" destination="M2k-G9-a2x" id="P6t-gg-Xwd"/>
+                        <outlet property="lettersSwitch" destination="XCX-gJ-ZHT" id="muR-DX-dVP"/>
+                        <outlet property="password" destination="vrO-dx-IVh" id="JkY-cQ-Ffa"/>
+                        <outlet property="sliderOutlet" destination="k24-qT-AHU" id="hjP-Yl-W5o"/>
+                        <outlet property="symbolsSwitch" destination="b6z-27-Mhy" id="txH-io-sop"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079.2" y="130.78817733990149"/>
+            <point key="canvasLocation" x="1079.2" y="129.08545727136433"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nrc-0b-fIT">
